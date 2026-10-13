@@ -1,12 +1,6 @@
 Tools & AI Usage: Built using Python, FastAPI, and the Google GenAI SDK. Drafted code structure and README documentation using Gemini as a collaborative pair-programming assistant.
 
-1. Swagger UI (/docs)
-URL: [https://your-render-app-name.onrender.com/docs](https://your-render-app-name.onrender.com/docs)
 
-What it is: An interactive UI where anyone (including your recruiter) can test your endpoints, view your schema, and execute API requests right from their browser.
-
-2. ReDoc (/redoc)
-URL: [https://your-render-app-name.onrender.com/redoc](https://your-render-app-name.onrender.com/redoc)
 
 What it is: Clean, structured documentation displaying your API routes, request bodies, and JSON response models.
 # Git Request Triage Machine 🛠️
