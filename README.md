@@ -65,3 +65,31 @@ Then, run this command in your Codespaces terminal:
 git add README.md main.py requirements.txt
 git commit -m "Add README and ensure all core files are committed"
 git push origin main
+
+## 📝 Example Inputs & Outputs
+
+### 1. Messy Bug Request (Valid)
+* **Input:** `"hey checkout page gives error 500 when clicking pay now on mobile safari fix asap"`
+* **Output:**
+  ```json
+  {
+    "intent": "bug",
+    "priority": "urgent",
+    "summary": "500 error on checkout payment via Mobile Safari.",
+    "actionable_steps": ["Check server logs for payment error", "Reproduce on Mobile Safari"],
+    "routing_team": "backend",
+    "is_ambiguous": false
+  }
+
+Input: "the lights are off pls fix"
+Output:
+{
+  "intent": "bug",
+  "priority": "low",
+  "summary": "User reported lights being off without specifying location, office, or UI context.",
+  "actionable_steps": [],
+  "routing_team": "facilities",
+  "is_ambiguous": true,
+  "clarifying_questions": ["Is this referring to physical office lighting or a UI theme issue?"]
+}
+
